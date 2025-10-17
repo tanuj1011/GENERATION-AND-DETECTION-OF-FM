@@ -66,12 +66,22 @@ To write a program for Frequency Modulation and Demodulation using SCILAB and to
 <img width="512" height="365" alt="image" src="https://github.com/user-attachments/assets/dfe6bc64-2b6f-4afa-ae79-95391859ab04" />
 
 ## PROGRAM
+<img width="1919" height="1189" alt="image" src="https://github.com/user-attachments/assets/23a7e251-2fba-49e8-91fe-a2ed0572bee9" />
+
 
 ## TABULATION
+![WhatsApp Image 2025-10-17 at 22 43 33_85c5bf8d](https://github.com/user-attachments/assets/146f170f-5173-4948-bb9f-49023eddef36)
+
 
 ## CALCULATION
+![WhatsApp Image 2025-10-17 at 22 50 15_9959a47d](https://github.com/user-attachments/assets/b2515adb-eab9-4b7f-996e-0409ddb9dd2d)
+
+
 
 ## OUTPUT
+![WhatsApp Image 2025-10-08 at 20 44 34_4529c3b0](https://github.com/user-attachments/assets/c8db5aa1-4f7c-4e0e-8b1f-9f8c369054ce)
+<img width="701" height="247" alt="image" src="https://github.com/user-attachments/assets/b528427d-9bfb-43c8-a013-0ac81f51ddbe" />
+
 
 ## RESULT
-
+Thus the frequency modulation and demodulation is successfully done and the output is experimentally verified.
