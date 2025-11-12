@@ -66,12 +66,61 @@ To write a program for Frequency Modulation and Demodulation using SCILAB and to
 <img width="512" height="365" alt="image" src="https://github.com/user-attachments/assets/dfe6bc64-2b6f-4afa-ae79-95391859ab04" />
 
 ## PROGRAM
+// --- Parameters for FM Signal ---
+clc; // Clear console
+clear; // Clear variables
+close; // Close graphics windows
 
+Ac = 8.1;      // Carrier Amplitude
+Am = 16.2;      // Message Amplitude
+fc = 79300;    // Carrier Frequency (Hz)
+fm = 793;     // Message Frequency (Hz)
+m = 5;       // Modulation Index (beta)
+
+Fs = 10 * fc; // Sampling Frequency (must be > 2*fc for carrier)
+t_end = 2 / fm; // Duration (e.g., 2 cycles of message signal)
+t = 0:1/Fs:t_end; // Time vector
+
+// --- Signal Generation ---
+
+// 1. Message Signal (m(t))
+Vm = Am * sin(2 * %pi * fm * t);
+
+// 2. Carrier Signal (c(t))
+Vc = Ac * cos(2 * %pi * fc * t);
+
+// 3. FM Modulated Signal (Vfm(t))
+// The phase term is: (2*%pi*fc*t) + m*sin(2*%pi*fm*t)
+Vfm = Ac * cos((2 * %pi * fc * t) + m * sin(2 * %pi * fm * t));
+
+// --- Plotting the Signals ---
+scf(0); // Create new figure window
+
+subplot(3, 1, 1);
+plot(t, Vm);
+title('Modulating Signal (Message)');
+xlabel('Time (s)');
+ylabel('Amplitude');
+
+subplot(3, 1, 2);
+plot(t, Vc);
+title('Carrier Signal');
+xlabel('Time (s)');
+ylabel('Amplitude');
+
+subplot(3, 1, 3);
+plot(t, Vfm);
+title('Frequency Modulated Signal');
+xlabel('Time (s)');
+ylabel('Amplitude');
 ## TABULATION
+![WhatsApp Image 2025-10-17 at 22 43 34_5d1310e6](https://github.com/user-attachments/assets/c3851496-c499-431a-8673-306fb95f3a4f)
 
 ## CALCULATION
+![WhatsApp Image 2025-10-17 at 22 07 12_af1fa808](https://github.com/user-attachments/assets/75c16d95-1f35-4085-936d-6c5564588c1a)
 
 ## OUTPUT
+![WhatsApp Image 2025-11-12 at 20 58 06_70875eb2](https://github.com/user-attachments/assets/5b550930-98f7-491e-a798-2a6eab9be432)
 
 ## RESULT
-
+Thus the frequency modulation and demodulation is successfully done and the output is experimentally verified.
